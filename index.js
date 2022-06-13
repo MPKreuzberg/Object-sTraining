@@ -23,25 +23,35 @@ console.log(volume(boxSize));
 
 console.log();
 
-//3.
-let relative = {
-  name: "R2D2",
-};
-function relationToLuke(relative) {
-  if (relative.name === "Luke") {
-    return "Darth Vader is your father.";
-  } else if (relative.name === "Leia") {
-    return "Leia is your sister.";
-  } else if (relative.name === "Han") {
-    return "Han is your brother in law.";
-  } else if (relative.name === "R2D2") {
-    return "R2D2 is your droid.";
-  } else {
-    return "I have no idea what you're talking about.";
+// 3.
+const lukeFamily = {
+    Luke: {
+      name: "Luke",
+      relation: "father",
+    },
+    Leia: {
+      name: "Leia",
+      relation: "sister",
+    },
+    Han: {
+      name: "Han",
+      relation: "brother in law",
+    },
+    R2D2: {
+      name: "R2D2",
+      relation: "droid",
+    }
   }
-}
-console.log(relationToLuke(relative));
-console.log();
+  function getRelation(name) {
+    return lukeFamily[name].relation;
+  }
+  console.log(getRelation("R2D2"));
+  
+  console.log();
+  
+
+  
+
 
 //4.
 let player = {
