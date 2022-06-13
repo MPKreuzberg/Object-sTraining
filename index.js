@@ -59,16 +59,18 @@ let player = {
   age: 30,
   height: 170,
   weight: 70,
+
+
   getAge: function () {
-    return `${player.name} is ${player.age} years old.`;
+    return `${this.name} is ${this.age} years old.`;
   },
   getHeight: function () {
-    return `${player.name} is ${player.height} cm tall.`;
+    return `${this.name} is ${this.height} cm tall.`;
   },
   getWeight: function () {
-    return `${player.name} weighs ${player.weight} kg.`;
+    return `${this.name} weighs ${this.weight} kg.`;
   },
-};
-console.log(player.getAge());
+}
+console.log(player.getAge() );
 console.log(player.getHeight());
 console.log(player.getWeight());
